@@ -105,6 +105,7 @@ module.exports = class ChainbetWallet {
         // Phase 4 Bet Participant Funding
         else if (betMessage.phase == 3) {
             // TODO: Verify alice's escrow
+            // TODO: Derive alice's commitment
 
             bet.participantEscrowTxid = await cbtx.fundParticipantEscrow(this.wallet, multisigPubKeys, bet.amount)
             
