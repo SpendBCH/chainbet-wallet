@@ -1,11 +1,9 @@
 {
   "name": "chainbet-wallet",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "",
+  "private": true,
   "main": "chainbet-wallet.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SpendBCH/chainbet-wallet.git"
@@ -15,10 +13,18 @@
   "bugs": {
     "url": "https://github.com/SpendBCH/chainbet-wallet/issues"
   },
-  "homepage": "https://github.com/SpendBCH/chainbet-wallet#readme",
+  "homepage": "https://spendbch.github.io/chainbet-wallet",
   "dependencies": {
-    "bitbox-cli": "^1.0.5",
-    "chainbet": "0.0.8",
-    "chainfeed": "^0.1.0"
+    "bitbox-cli": "^1.1.0",
+    "chainfeed": "^0.1.0",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-scripts": "^1.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   }
 }
